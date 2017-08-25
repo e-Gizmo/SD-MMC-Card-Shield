@@ -1,0 +1,26 @@
+Note:
+If you are using Arduino2560 Board
+for e-gizmo SD card Shield and OLED shield.
+
+Schematic forArduino 2560.
+https://www.arduino.cc/en/uploads/Main/arduino-mega2560-schematic.pdf
+
+For SD card manually wire 
+Arduino Mega 2560 to SD card Shield.
+
+Pin 4 - Pin 10 (CS)
+Pin 51 - Pin 11 (MOSI)
+Pin 52 - Pin 12 (SCK)
+Pin 50 - Pin 13 (MISO)
+
+Then for gizduino X
+uncomment this from the OLED_Frame328.ino sketch
+
+/* For gizDuino X */
+ //#define PORTOLED PORTF 
+//#define PORTOLEDDDR DDRF
+
+Thank you.!
+
+You may visit this blog for more information:
+https://electronicslinetracker.wordpress.com/2016/05/20/sdmmc-card-shield-interface-with-arduino-mega2560/comment-page-1/#comment-5
